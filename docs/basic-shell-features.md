@@ -116,3 +116,22 @@ a control-x character
 Prefixing a double-quoted string with a dollar sign (**\$**), such as **\$"Hello, world"**, translates it according to the current locale.
 
 ### Comments
+
+The start of a comment is marked by the hashtag symbol (**#**). In a **non-interactive shell** or an **interactive shell** with **interactive_comments** enabled, when the start of a comment is encountered, the hashtag symbol along with the rest of the line is ignored.
+
+Comments are not allowed in an **interactive shell** with **interactive_comments** disabled.
+
+## Shell commands
+
+A **simple command** consists of the command itself, followed by a sequence of space-separated arguments. While a **complex command** consists of **simple commands** and other constructs, such as **pipelines**, **loops**, or **conditions**.
+
+### Reserved words
+
+When unquoted, the following words have special meanings:
+
+```
+if	  then  elif    else    fi        time
+for   in    until   while   do        done
+case  esac  coproc  select  function
+{	    }     [[      ]]      !
+```
