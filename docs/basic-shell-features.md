@@ -133,5 +133,7 @@ When unquoted, the following words have special meanings:
 if	  then  elif    else    fi        time
 for   in    until   while   do        done
 case  esac  coproc  select  function
-{	    }     [[      ]]      !
+{     }     [[      !       ]]
 ```
+
+There are a few honorary reserved keywords, which carry special meaning only in some cases. **in** is treated as a reserved keyword when present as the third word in a **case** or a **select** command. And **in** and **do** are treated as reserved keywords when present as the third word in a **for** command.
