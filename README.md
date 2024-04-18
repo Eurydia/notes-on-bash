@@ -1,4 +1,4 @@
-# Bash notes
+# Notes on BASH
 
 ## Resources
 
